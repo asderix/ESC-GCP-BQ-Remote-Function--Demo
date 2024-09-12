@@ -72,7 +72,7 @@ variable "bq_dataset_id" {
 
 resource "null_resource" "download_file" {
   provisioner "local-exec" {
-    command = "curl -L -o ${var.bin_file_name} https://esc.asderix.com/download/EscCloudFunctionsSimExample.zip"
+    command = "curl -L -o ${var.bin_file_name} https://github.com/asderix/ESC-GCP-BQ-Remote-Function--Demo/releases/download/v1.0/EscCloudFunctionsSimExample.zip"
   }
 }
 
